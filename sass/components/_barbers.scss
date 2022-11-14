@@ -1,0 +1,151 @@
+.barbers {
+    @extend %section;
+    background-color: $barbers-background-color;
+
+&__container {
+    @extend %container;
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    padding-left: 159px;
+    padding-right: 159px;
+}
+}
+}
+
+.barbers__subtitle {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+        
+    text-transform: uppercase;
+    
+    color: $main-title-color;
+
+&::before {
+    content: "";
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    
+    background-color:$main-title-color;
+    }
+}
+
+.barbers__title {
+    margin-top: 0;
+    margin-bottom: 44px;
+
+    font-family: 'Raleway';
+        
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    
+    color:$main-title-color;
+
+}
+
+.barbers__list {
+    @extend %list;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
+}
+
+.barbers__item {
+    width: 418px;
+    margin-bottom: 64px;
+
+@media screen and (min-width: 768px) and (max-width:119px) {
+    width: 450px;
+}
+
+@media screen and (min-width:1200px) {
+    width: 370px;
+    margin-bottom: 0;
+    
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+}
+
+.barbers__image {
+    @extend %image;
+}
+
+.barbers__card-body {
+    margin-top: 30px;
+}
+
+.barbers__card-subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    color:$main-title-color;
+}
+
+.barbers__description {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+        
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    color: $accent-color;
+}
+
+.barbers__soc-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+&__soc-icon {
+        fill: currentColor;
+    }
+}
+
+.barbers__soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    @extend %link;
+    color: $main-title-color;
+    background-color: $main-title-color;
+
+    transition: color 250ms linear;
+
+
+    &:hover,
+    &:focus {
+       fill: $accent-color;
+    }
+}
+
+
