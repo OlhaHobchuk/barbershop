@@ -44,6 +44,7 @@
 
 .price__container {
     @extend %container;
+    
 }
 
 .price__subtitle {
@@ -99,7 +100,7 @@ line-height: 49px;
     
     @media screen and (max-width:767px) {
     padding: 30px 40px;
-    width: 418px;
+    max-width: 418px;
     height: 360px;
     background: $price-first-section-gradient;}
 
@@ -153,11 +154,15 @@ line-height: 49px;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.43;
     letter-spacing: 0.02em;
     
     color: $secondary-text-color;
+
+@media screen and (min-width:480px) {
+    font-size: 14px;
+}
 
 @media screen and (min-width:768px) {
     font-size: 18px;
@@ -171,12 +176,15 @@ line-height: 49px;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.43;
     letter-spacing: 0.02em;
     flex-grow: 2;
 
     color: $secondary-text-color;
+    @media screen and (min-width:480px) {
+        font-size: 14px;
+    }
 
     @media screen and (min-width:768px) {
         font-size: 18px;

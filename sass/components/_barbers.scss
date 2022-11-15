@@ -39,7 +39,7 @@
     margin-top: 0;
     margin-bottom: 44px;
 
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
         
     font-weight: 700;
     font-size: 42px;
@@ -65,8 +65,12 @@
 }
 
 .barbers__item {
-    width: 418px;
+    max-width: 100%;
     margin-bottom: 64px;
+
+@media screen and (min-width:480px) {
+    width: 418px;
+}
 
 @media screen and (min-width: 768px) and (max-width:119px) {
     width: 450px;
@@ -137,7 +141,7 @@
     border-radius: 50%;
     @extend %link;
     color: $main-title-color;
-    background-color: $main-title-color;
+    background-color: $main-white-color;
 
     transition: color 250ms linear;
 
